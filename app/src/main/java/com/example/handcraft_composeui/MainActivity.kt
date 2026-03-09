@@ -51,26 +51,17 @@ import com.zero.profile001.ui.util.px
 import com.zero.profile001.ui.util.textPx
 import kotlin.math.roundToInt
 
-// ============================================================================
-// MainActivity
-// ============================================================================
-// 功能描述：主 Activity，应用的入口点
-// 说明：继承自 ComponentActivity 以支持 Jetpack Compose UI 框架
-// ============================================================================
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 启用边缘到边缘布局模式，让内容延伸到状态栏和导航栏下方
         enableEdgeToEdge()
 
         // 设置 Compose UI 内容
         setContent {
             // 应用自定义主题包装所有界面组件
             HandCraft_ComposeUITheme {
-                // TODO: 在这里放置主界面内容
-                // 目前留空，ProfileScreen 通过 Preview 独立预览
             }
         }
     }
